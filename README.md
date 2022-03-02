@@ -1,1 +1,1 @@
-# Autonomous-Lane-Changing-using-Model-Predictive-Control
+# Autonomous Lane Changing using Model Predictive Control
