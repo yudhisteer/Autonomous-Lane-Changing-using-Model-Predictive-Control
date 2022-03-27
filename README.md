@@ -121,10 +121,13 @@ Once we have <img src="https://latex.codecogs.com/png.image?\dpi{110}x,y,\psi&sp
 In the open loop system above, we already have our <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " /> as the input, so now we need to build the ```closed-loop``` system which will allow us to derive the <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " />.
 
 <p align="center">
-  <img src= "https://user-images.githubusercontent.com/59663734/160295504-910774fb-a952-4096-b49c-bc8a74ad0c1d.png" width="600" height="210"/>
+  <img src= "https://user-images.githubusercontent.com/59663734/160297505-0f4e61cf-4c95-4d0f-8c0a-8a1c88db548f.png" width="700" height="180"/>
 </p>
 
-- <img src="https://latex.codecogs.com/png.image?\dpi{110}\begin{bmatrix}x_{R}\\y_{R}\\\psi&space;_{R}\\\end{bmatrix}-\begin{bmatrix}x&space;\\y&space;\\\psi&space;\end{bmatrix}=\begin{bmatrix}e_{x}\\e_{y}\\e_{\psi}\\\end{bmatrix}" title="https://latex.codecogs.com/png.image?\dpi{110}\begin{bmatrix}x_{R}\\y_{R}\\\psi _{R}\\\end{bmatrix}-\begin{bmatrix}x \\y \\\psi \end{bmatrix}=\begin{bmatrix}e_{x}\\e_{y}\\e_{\psi}\\\end{bmatrix}" />
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\begin{bmatrix}x_{R}\\y_{R}\\\psi&space;_{R}\\\end{bmatrix}-\begin{bmatrix}x&space;\\y&space;\\\psi&space;\end{bmatrix}=\begin{bmatrix}e_{x}\\e_{y}\\e_{\psi}\\\end{bmatrix}" title="https://latex.codecogs.com/png.image?\dpi{110}\begin{bmatrix}x_{R}\\y_{R}\\\psi _{R}\\\end{bmatrix}-\begin{bmatrix}x \\y \\\psi \end{bmatrix}=\begin{bmatrix}e_{x}\\e_{y}\\e_{\psi}\\\end{bmatrix}"/>
+</p>
 
 The error vector will be the ```input``` of our controller and its job, its ```output```, will be to find the best steering wheel angle, <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta" title="https://latex.codecogs.com/png.image?\dpi{110}\delta" />, so that the errors go to ```0```. The errors go to zero when <img src="https://latex.codecogs.com/png.image?\dpi{110}x_{R}&space;=&space;x" title="https://latex.codecogs.com/png.image?\dpi{110}x_{R} = x" />, <img src="https://latex.codecogs.com/png.image?\dpi{110}y_{R}&space;=&space;y" title="https://latex.codecogs.com/png.image?\dpi{110}y_{R} = y" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi&space;_{R}&space;=&space;\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\psi _{R} = \psi " />.
 
