@@ -143,7 +143,7 @@ Suppose we are moving at 20 m/s then in 7 s, our distance covered in the y-direc
 The reason we will be using a MPC instead of a PID is becasue a PID is a Single Input Single Output (SISO) whereas a MPS is a Multiple Input Multiple Output (MIMO). We can still use a PID controller but we have have to tune 6 constants - 3 constants <img src="https://latex.codecogs.com/png.image?\dpi{110}(K_{P},K_{D},K_{I})" title="https://latex.codecogs.com/png.image?\dpi{110}(K_{P},K_{D},K_{I})" /> for each PID. Figure below shows the schematic if we had used PID controllers:
 
 <p align="center">
-  <img src= "https://user-images.githubusercontent.com/59663734/160297034-2a4f753d-f5c9-47b3-88c9-9bf4bef71312.png" width="600" height="130"/>
+  <img src= "https://user-images.githubusercontent.com/59663734/160297163-7b0f8a86-61a9-413b-9f48-fce8aa562ed5.png" width="600" height="130"/>
 </p>
 
 
