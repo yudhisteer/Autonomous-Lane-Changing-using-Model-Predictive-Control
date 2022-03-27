@@ -11,6 +11,10 @@
 
 ## Research Questions
 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160285501-ca5c39e0-d4ff-4703-b028-93c07eaa192a.png" />
+</p>
+
 ## Methods
 
 ## Plan of Action
@@ -56,6 +60,11 @@
 ## Implementation
 
 ### 1. PID vs MPC
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160286771-841016d3-0427-4fe3-8387-9be49cec990a.png"  width = "350" height = "300"/>
+</p>
+
     
 #### 1.1 Controller Schematics
 
