@@ -60,19 +60,57 @@
 ## Implementation
 
 ### 1. PID vs MPC
+The ```problem statement``` is simple: we have an obstacle (a car at rest) on our lane, we want to achieve a lane changing maneuvre to avoid that obstacle. So how does this work? We assume we have a lidar system or a pseudo-lidar system using stereo cameras which will detect the obstacle and plan a trajectory for lane changing. The goal here is to compute <img src="https://latex.codecogs.com/svg.image?\delta&space;" title="https://latex.codecogs.com/svg.image?\delta " /> degrees which is the ```angle``` required for the front wheel to rotate in order to achieve this planned trajectory.
+
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160287947-1e833c1c-dca9-42cf-bf65-a0507b913145.gif"/>
 </p>
 
-
-
+So we need to design a ```controller``` which will derive automatically which <img src="https://latex.codecogs.com/svg.image?\delta&space;" title="https://latex.codecogs.com/svg.image?\delta " /> degrees is optimal. To simplify our system, we will use the line diagram in the picture below shown on the right. <img src="https://latex.codecogs.com/svg.image?\delta&space;" title="https://latex.codecogs.com/svg.image?\delta " /> is the angle between the vertical axis and the local axis of the wheel.
 
 <p align="center">
-  <img src= "https://user-images.githubusercontent.com/59663734/160286771-841016d3-0427-4fe3-8387-9be49cec990a.png"  width = "350" height = "300"/>
+  <img src= "https://user-images.githubusercontent.com/59663734/160290549-9a6046e2-d1b7-49ba-86cc-df0b0fdfd4b4.png"  width = "350" height = "300"/>
 </p>
 
-    
+We will need to make a couple of assumptions in order to simplify our system:
+
+- We will be moving at a ```constant velocity```.
+- We already have a ```trajectory pre-planned``` - it can be the optimal solution from another system.
+- We assume the car is moving on a ```flat surface``` so that we can ignore the Z-axis.
+
+From the assumptions made above, we have a ```3 degree of freedom (dof)``` system. That is, we only require ```3``` variables in order to derive the position and orientation of the car - <img src="https://latex.codecogs.com/png.image?\dpi{110}(x,y,\psi)" title="https://latex.codecogs.com/png.image?\dpi{110}(x,y,\psi)" /> where <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi" title="https://latex.codecogs.com/png.image?\dpi{110}\psi" /> is the angle in radians of the orientation of the vehicle w.r.t to a reference frame.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160291256-16616701-ed7a-481a-834e-ee5e5bebaf25.png"  width="300" height="300"/>
+</p>
+
+Our goal will be to overtake the obstacle, that is changing the lane, in ```7``` seconds. While this may seem simple, it is quite a challenging problem as we have to take into consideration the ```comfort``` of the passenger in the vehicle, the ```safety``` of the passengers in the vehicle and of other vehicles and also the ```efficiency``` of our system.
+
+**Scenario 1: Staight Line Trajectory**
+
+We can have a case where we can straight line trajectory for lane overtaking. Also, it can be an easy task computationally, it will not be a realistic case. In real-life, it is impossibe to have such sharp turns and suppose if we can acheive it then it will be quite uncomfortable for our passengers. Hence, we can scrape scenatio 1.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160291980-5227a42d-d025-40ed-bfac-41cedb4b20e6.png" />
+</p>
+
+
+**Scenario 2: Bézier Curve Trajectory**
+
+The reason we use a spline or more specifically a Bézier curve is in order to acheive a more realistic scenario which we would expect in real-life. We can be sure to acheive a smooth transition during overtaking which will allow for the comfort and safety of the passengers.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160292453-f61bbdd6-b157-4441-99c6-0958440e1f10.png" />
+</p>
+
+For now, we are assuming our obstacles are constant however, if we had a system which could determine the speed at which other vehicles are moving and if we could determine the length of the vehicles then we could determine this overtaking trajectory on the go instead of pre-planned.
+
 #### 1.1 Controller Schematics
+
+
+
+
+
 
 #### 1.2 Reference Frames
 
