@@ -24,6 +24,27 @@
 
 3. State-Space and Linear Time Invariant (LTI)
     - Equations of motion to State-space
+    - Adding Extra States
+    - Computing New States
+    - Linear Time Invariant (LTI)
+    - LTI Model with Small Angle Approximation
+
+4. MPC of Rocket
+    - Thrust Levels
+    - Cost Function
+    - Noise
+    - Weights
+    - Horizon Period
+    - Kalman Filter
+    - Quadratic and Other Cost Functions
+
+5. MPC of Autonomous Car
+    - Forward Euler Method
+    - Predicting Future States
+    - Deriving a Cost Function
+    - Regulating <img src="https://latex.codecogs.com/svg.image?\delta&space;" title="https://latex.codecogs.com/svg.image?\delta " />
+    - Advantages of Predicting
+    - Errors as State-space equations
 
 
 ## Implementation
