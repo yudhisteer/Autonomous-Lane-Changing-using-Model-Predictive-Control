@@ -60,6 +60,12 @@
 ## Implementation
 
 ### 1. PID vs MPC
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160287947-1e833c1c-dca9-42cf-bf65-a0507b913145.gif"/>
+</p>
+
+
+
 
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160286771-841016d3-0427-4fe3-8387-9be49cec990a.png"  width = "350" height = "300"/>
