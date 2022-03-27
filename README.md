@@ -106,7 +106,7 @@ The reason we use a spline or more specifically a Bézier curve is in order to a
 For now, we are assuming our obstacles are constant however, if we had a system which could determine the speed at which other vehicles are moving and if we could determine the length of the vehicles then we could determine this overtaking trajectory on the go instead of pre-planned.
 
 #### 1.1 Controller Schematics
-
+We will start our controller schematics with an ```Open-Loop``` system. Our input will be <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " />, that is the angle of rotation of the front wheels, and our output will be <img src="https://latex.codecogs.com/png.image?\dpi{110}(x,y,\psi)" title="https://latex.codecogs.com/png.image?\dpi{110}(x,y,\psi)" />.
 
 
 
