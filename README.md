@@ -3,6 +3,12 @@
 
 ## Abstract
 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160285131-79c71a9a-599a-48a7-b84b-99d649ab8dd9.gif" />
+</p>
+
+
+
 ## Research Questions
 
 ## Methods
@@ -82,4 +88,9 @@
 #### 3.1 Equations of motion to State-space
 
 ## Conclusion
+
 ## References
+1. https://www.youtube.com/watch?v=W5Eo5EEbt0s&t=240s
+2. https://www.youtube.com/watch?v=3xDBu6yXSn4
+3. https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=1064&context=mems500#:~:text=Obstacle%20avoidance%2C%20especially%20lane%20change,a%20safe%20and%20stable%20driving.
+4. 
