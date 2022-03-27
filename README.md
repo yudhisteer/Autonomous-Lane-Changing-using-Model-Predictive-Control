@@ -109,6 +109,43 @@ For now, we are assuming our obstacles are constant however, if we had a system 
 We will start our controller schematics with an ```Open-Loop``` system. Our input will be <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " />, that is the angle of rotation of the front wheels, and our output will be <img src="https://latex.codecogs.com/png.image?\dpi{110}(x,y,\psi)" title="https://latex.codecogs.com/png.image?\dpi{110}(x,y,\psi)" />.
 
 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160295046-88c9e547-dd4e-479d-9fdf-b0944c8db68a.png" width="600" height="230"/>
+</p>
+
+Once we have <img src="https://latex.codecogs.com/png.image?\dpi{110}x,y,\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}x,y,\psi " />, we need to compare them to our reference values.
+
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}x,y,\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}x,y,\psi " />: where we are right now
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}x_{R},y_{R},\psi&space;_{R}" title="https://latex.codecogs.com/png.image?\dpi{110}x_{R},y_{R},\psi _{R}" />:  where we want to be
+
+In the open loop system above, we already have our <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " /> as the input, so now we need to build the ```closed-loop``` system which will allow us to derive the <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " />.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160295504-910774fb-a952-4096-b49c-bc8a74ad0c1d.png" width="600" height="210"/>
+</p>
+
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}\begin{bmatrix}x_{R}\\y_{R}\\\psi&space;_{R}\\\end{bmatrix}-\begin{bmatrix}x&space;\\y&space;\\\psi&space;\end{bmatrix}=\begin{bmatrix}e_{x}\\e_{y}\\e_{\psi}\\\end{bmatrix}" title="https://latex.codecogs.com/png.image?\dpi{110}\begin{bmatrix}x_{R}\\y_{R}\\\psi _{R}\\\end{bmatrix}-\begin{bmatrix}x \\y \\\psi \end{bmatrix}=\begin{bmatrix}e_{x}\\e_{y}\\e_{\psi}\\\end{bmatrix}" />
+
+The error vector will be the ```input``` of our controller and its job, its ```output```, will be to find the best steering wheel angle, <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta" title="https://latex.codecogs.com/png.image?\dpi{110}\delta" />, so that the errors go to ```0```. The errors go to zero when <img src="https://latex.codecogs.com/png.image?\dpi{110}x_{R}&space;=&space;x" title="https://latex.codecogs.com/png.image?\dpi{110}x_{R} = x" />, <img src="https://latex.codecogs.com/png.image?\dpi{110}y_{R}&space;=&space;y" title="https://latex.codecogs.com/png.image?\dpi{110}y_{R} = y" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi&space;_{R}&space;=&space;\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\psi _{R} = \psi " />.
+
+Suppose we are moving at 20 m/s then in 7 s, our distance covered in the y-direction will be ```140 m``` whereas the distance covered in the x-direction will be only ```4 m```. An approximate of the yaw-angle is arctan(4/140) which is ```1.64``` degrees which is very small. Hence, we deduce <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\psi " /> depends only on the y-direction and we can ignore the x-direction.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160296551-3963804d-16df-4f81-8337-88969e3bc087.png" />
+</p>
+
+**Note:** We do not need to control the Forward Velocity and we will simplify our system to make is 2 dof such that we now only need to variables: y and <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\psi " />:
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160296834-d37a07b9-390d-4eed-9fa7-018e9e66f7f2.png" width="600" height="150"/>
+</p>
+
+The reason we will be using a MPC instead of a PID is becasue a PID is a Single Input Single Output (SISO) whereas a MPS is a Multiple Input Multiple Output (MIMO). We can still use a PID controller but we have have to tune 6 constants - 3 constants <img src="https://latex.codecogs.com/png.image?\dpi{110}(K_{P},K_{D},K_{I})" title="https://latex.codecogs.com/png.image?\dpi{110}(K_{P},K_{D},K_{I})" /> for each PID. Figure below shows the schematic if we had used PID controllers:
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160297034-2a4f753d-f5c9-47b3-88c9-9bf4bef71312.png" width="600" height="130"/>
+</p>
+
 
 
 
