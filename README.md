@@ -183,8 +183,25 @@ We start by finding the components of <img src="https://latex.codecogs.com/png.i
 From the two computations above, we transform the Body Frame's velocities to velocities in the Global Refrence Frame.
 
 ### 2. Lateral Control using Equations of Motion
+We will now design our ```plant``` to describe motion in the ```lateral``` direction. We will use that model/plant to later design our controller (MPC). The system will try to relate the system's input, <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " /> to the system's output <img src="https://latex.codecogs.com/png.image?\dpi{110}Y,\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}Y,\psi " />. so we will have a function that describes <img src="https://latex.codecogs.com/png.image?\dpi{110}Y,\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}Y,\psi " /> based on <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\delta " /> - <img src="https://latex.codecogs.com/png.image?\dpi{110}f(\delta&space;)\mapsto&space;Y,\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}f(\delta )\mapsto Y,\psi " />.
 
 #### 2.1 Bicycle Model
+Earlier we simplified our model with the line diagram, now we will further simplify our model with one of a ```Bicycle```. We use the Bicycle model as it represents the car's dynamics well enough and allow the design of the controller reliably.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160399129-d1020a26-baaa-4a70-8a24-d5b67885f4b1.png" width="500" height="320"/>
+</p>
+
+**Scenario 1: Two instanteneous points with old cars model**
+Long time ago, cars used to turn their entire front axle and not only the wheels to make a turn. However, turning the entire axle is not very efficient. 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160397648-72e532c1-dc9f-4fb7-a1b5-f1c177187b29.gif"/>
+</p>
+
+
+**Scenario 2: One instanteneous point**
+
+**Scenario 3: Two instanteneous points with new cars model**
 
 #### 2.2 Ackerman Steering
 
