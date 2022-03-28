@@ -239,15 +239,27 @@ Now, the question we should ask is that if we find <img src="https://latex.codec
 
 The intention of Ackermann geometry is to avoid the need for tires to ```slip``` sideways when following the path around a curve. As the steering moved, the wheels turned according to Ackermann, with the inner wheel turning further. 
 
-When making a turn each tires' path has a different radius therefore, this means that each tire is rotating at a different rate. The wheels on the outside travel further distance so the angular velocities of the outer wheels are greater than the angular velocities of the inner wheels. But the wheels on the inside turn at a greater angle than those on the outside. 
+When making a turn each tires' path has a different radius therefore, this means that each tire is rotating at a different rate. The wheels on the outside travel further distance so the angular velocities of the outer wheels are greater than the angular velocities of the inner wheels. But the wheels on the inside turn at a greater angle than those on the outside as shown below.
 
-Note: Modern cars do not use pure Ackermann steering, partly because it ignores important dynamic and compliant effects, but the principle is sound for low-speed maneuvers. 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160469036-dab712c9-a91e-4a9c-a2b3-23bf45aaae99.png"/>
+</p>
 
 
-
-
+**Note:** Modern cars do not use pure Ackermann steering, partly because it ignores important dynamic and compliant effects, but the principle is sound for low-speed maneuvers. 
 
 #### 2.3 Longitudinal and Lateral Velocities
+Earlier we said that when the car performs a lane changing maneuvre with a constant longitudinal velocity of 20 m/s then the car will mostly drive in the Longitudinal direction and not in the Lateral direction. However, for our Bicycle model, we also have a velocity in the ```lateral``` direction which is small compared to the longitudinal velocity.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160474891-f212f0ef-f4f1-4a90-96d7-9930db557aea.png" width="600" height="400"/>
+</p>
+
+In the diagram above we see that we have a front velocity <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{F}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{F}" /> but all along the body of our bicycle we have velocities ```V``` with angles <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{1}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{1}" /> till <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{4}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{4}" /> of magnitude less than <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{F}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{F}" />. And we can draw a perpendicular projection from all these velocities and all of them will intersect at the Centre of Instanteneous Rotation. The magnitude of the angles are such that:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{1}<\theta&space;_{2}<\beta&space;<\theta&space;_{3}<\theta&space;_{4}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{1}<\theta _{2}<\beta <\theta _{3}<\theta _{4}"/>
+</p>
 
 #### 2.4 Equations of Motion in Lateral Direction
 
