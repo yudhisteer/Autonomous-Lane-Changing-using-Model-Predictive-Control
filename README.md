@@ -180,7 +180,7 @@ We start by finding the components of <img src="https://latex.codecogs.com/png.i
   <img src= "https://latex.codecogs.com/png.image?\dpi{110}\dot{Y}=V_{x_{y}}&plus;V_{y_{y}}=V_{x}\cdot&space;sin(\frac{\pi}{6})&plus;V_{y}\cdot&space;cos(\frac{\pi}{6})" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{Y}=V_{x_{y}}+V_{y_{y}}=V_{x}\cdot sin(\frac{\pi}{6})+V_{y}\cdot cos(\frac{\pi}{6})"/>
 </p>
 
-From the two computations above, e transform the Body Frame's velocities to velocities in the Global Refrence Frame.
+From the two computations above, we transform the Body Frame's velocities to velocities in the Global Refrence Frame.
 
 ### 2. Lateral Control using Equations of Motion
 
