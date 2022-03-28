@@ -231,6 +231,21 @@ The goal is to have two different angle of rotation of the front wheels with the
 However, the Bicycle model does not take this into account as it has only one front wheel. However, <img src="https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;-\delta\approx&space;0" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha -\delta\approx 0" />, therefore, we can take <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta" title="https://latex.codecogs.com/png.image?\dpi{110}\delta" /> as the front wheel angle.
 
 #### 2.2 Ackerman Steering
+Now, the question we should ask is that if we find <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta" title="https://latex.codecogs.com/png.image?\dpi{110}\delta" /> from the Bicycle model from the MPC then how do we apply it to the car model? To approximate the ideal steering (<img src="https://latex.codecogs.com/png.image?\dpi{110}\delta_{1},\delta_{2}" title="https://latex.codecogs.com/png.image?\dpi{110}\delta_{1},\delta_{2}" /> where <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta_{1}\neq&space;\delta_{2}" title="https://latex.codecogs.com/png.image?\dpi{110}\delta_{1}\neq \delta_{2}" />) that will cause **one** Centre of Instanteneous Rotation, we need to use ```Ackerman Steering```.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160466671-65251697-2577-4699-94d3-c084e45b6c4c.png"/>
+</p>
+
+The intention of Ackermann geometry is to avoid the need for tires to ```slip``` sideways when following the path around a curve. As the steering moved, the wheels turned according to Ackermann, with the inner wheel turning further. 
+
+When making a turn each tires' path has a different radius therefore, this means that each tire is rotating at a different rate. The wheels on the outside travel further distance so the angular velocities of the outer wheels are greater than the angular velocities of the inner wheels. But the wheels on the inside turn at a greater angle than those on the outside. 
+
+Note: Modern cars do not use pure Ackermann steering, partly because it ignores important dynamic and compliant effects, but the principle is sound for low-speed maneuvers. 
+
+
+
+
 
 #### 2.3 Longitudinal and Lateral Velocities
 
@@ -254,4 +269,5 @@ However, the Bicycle model does not take this into account as it has only one fr
 1. https://www.youtube.com/watch?v=W5Eo5EEbt0s&t=240s
 2. https://www.youtube.com/watch?v=3xDBu6yXSn4
 3. https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=1064&context=mems500#:~:text=Obstacle%20avoidance%2C%20especially%20lane%20change,a%20safe%20and%20stable%20driving.
-4. 
+4. https://www.youtube.com/watch?v=oYMMdjbmQXc
+5. https://en.wikipedia.org/wiki/Ackermann_steering_geometry
