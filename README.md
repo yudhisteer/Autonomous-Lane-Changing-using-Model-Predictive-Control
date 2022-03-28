@@ -150,13 +150,37 @@ The reason we will be using a MPC instead of a PID is becasue a PID is a Single 
 </p>
 
 
-
-
 #### 1.2 Reference Frames
+We will now setup our reference frames: ```Inertial Reference Frame``` and a ```Body Frame```. The reason we have 2 reference frames is because our trajectory is defined in the Inertial Frame and therefore we need to translate our Body Frame's velocity into our Global Coordinate System.
+
+Recall that we have a constant longitudinal velocity of 20 m/s.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160376183-4f20cbdc-1be3-4093-8b7c-66e2862ca3a1.png" width="300" height="340"/>
+</p>
+
+From the image below we have <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{x}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{x}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" /> in our Body Frame and we need to transform it into <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{X}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{X}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{Y}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{Y}" /> respectively in the Global Reference Frame.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160378505-df829a89-aa1e-4b12-b52a-3c0fd83c0b53.png" width="500" height="320"/>
+</p>
 
 
+We start by finding the components of <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{x}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{x}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{y}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{y}" /> in the Global Reference frame then compute the resultant velocities in the X and Y direction.
 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160380738-c6c073d1-3606-4384-bd88-b6c492eaa2c2.png"/>
+</p>
 
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\dot{X}=V_{x_{x}}-V_{y_{x}}=V_{x}\cdot&space;cos(\frac{\pi}{6})-V_{y}\cdot&space;sin(\frac{\pi}{6})" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{X}=V_{x_{x}}-V_{y_{x}}=V_{x}\cdot cos(\frac{\pi}{6})-V_{y}\cdot sin(\frac{\pi}{6})"/>
+</p>
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\dot{Y}=V_{x_{y}}&plus;V_{y_{y}}=V_{x}\cdot&space;sin(\frac{\pi}{6})&plus;V_{y}\cdot&space;cos(\frac{\pi}{6})" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{Y}=V_{x_{y}}+V_{y_{y}}=V_{x}\cdot sin(\frac{\pi}{6})+V_{y}\cdot cos(\frac{\pi}{6})"/>
+</p>
+
+From the two computations above, e transform the Body Frame's velocities to velocities in the Global Refrence Frame.
 
 ### 2. Lateral Control using Equations of Motion
 
