@@ -193,15 +193,42 @@ Earlier we simplified our model with the line diagram, now we will further simpl
 </p>
 
 **Scenario 1: Two instanteneous points with old cars model**
-Long time ago, cars used to turn their entire front axle and not only the wheels to make a turn. However, turning the entire axle is not very efficient. 
+
+Long time ago, cars used to turn their entire front axle and not only the wheels to make a turn. However, turning the entire axle is not very efficient. When two wheels are locked on an axle so that they are not free to turn separately, one or the other has to slide. 
+
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160397648-72e532c1-dc9f-4fb7-a1b5-f1c177187b29.gif"/>
 </p>
 
+In the figure below, we have two instances where the axle is turn at 15 degrees (green) and another at 30 degrees (red). If we draw two projection lines perpendicular to the inner front and back wheels, then these two lines intersect at the ```Instanteneous Center Point```. 
 
-**Scenario 2: One instanteneous point**
+_The instanteneous centre of rotation/point is a point about which a rigid body in general plane motion can be considered to have purely rotational motion at that instant._
 
-**Scenario 3: Two instanteneous points with new cars model**
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160451231-c8653a79-434b-4765-8a0b-f11647057436.png" width="500" height="470"/>
+</p>
+
+ We see that a mere change of 15 degrees pushes the centre points further apart and does not allow the car for sharp turns. This can be problematic in practice specially if we need to have tight corners and paralell parking.
+
+**Scenario 2: Two instanteneous points with pivoting wheels**
+
+We will now see at an improvement of our car model whereby we no longer need to turn the entire axle to make a turn but only need to turn the wheels. We see that the problem with this kind of configuration that when turning atleast one wheel will be ```slipping```.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160453693-ebcb5545-9e1a-412e-8270-e2c4343bfc84.png" width="500" height="300"/>
+</p>
+
+So the question we should ask is: how can we turn the two wheels without turning the entire axle in such a way so as to have only **one** Instanteneous Center of Rotation?
+
+**Scenario 3: One instanteneous point with new cars model**
+
+The goal is to have two different angle of rotation of the front wheels with the inner wheel pivoted at a bigger angle than the outer wheel. With this solution we avoid turing an entire axle and avoid tire slipping.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160454979-1fb13d8a-3ef2-40b9-af5a-d87d65ba44a1.png" width="500" height="300"/>
+</p>
+
+However, the Bicycle model does not take this into account as it has only one front wheel. However, <img src="https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;-\delta\approx&space;0" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha -\delta\approx 0" />, therefore, we can take <img src="https://latex.codecogs.com/png.image?\dpi{110}\delta" title="https://latex.codecogs.com/png.image?\dpi{110}\delta" /> as the front wheel angle.
 
 #### 2.2 Ackerman Steering
 
