@@ -29,6 +29,7 @@
     - Longitudinal and Lateral Velocities
     - Equations of Motion in Lateral Direction
     - Understanding Centripetal Acceleration
+    - Acceleration in lateral direction
     - Modelling the Front Wheel
 
 
@@ -347,7 +348,52 @@ where:
 
 - <img src="https://latex.codecogs.com/svg.image?\dot{\psi&space;}" title="https://latex.codecogs.com/svg.image?\dot{\psi }" />: change of angular displacement w.r.t time
 
-#### 2.6 Modelling the Front Wheel
+**Note:** In our case, our longitudinal velocity is constant but the direction of the velocity changes hence, we have an acceleration
+
+#### 2.6 Acceleration in lateral direction
+In the lane changing project, the turns are so small and therefore the slip angle <img src="https://latex.codecogs.com/png.image?\dpi{110}\beta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\beta " /> is so small that we can neglect it and instead use <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{x}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{x}" /> instead.
+
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160675904-c8f55497-c250-45f4-9c7b-cb8daeef34ad.png" width="350" height="280"/>
+</p>
+
+Thus, from the theory explained above, we will then define our acceleration in the lateral direction as :
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}a_{y}=\ddot{y}&plus;a_{c}=\ddot{y}&plus;\dot{x}\cdot&space;\dot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{y}=\ddot{y}+a_{c}=\ddot{y}+\dot{x}\cdot \dot{\psi }"/>
+</p>
+
+We can choose to either work with the ```Body Frame``` (Fixed to the vehicle) or work with the ```Inertial Frame``` (Fixed to the ground). When the vehicle rotates, the body frame rorates with it hence, for simplicity we will choose to work with the Body Frame.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160681476-616eda26-1d00-4448-baf5-02217a97712e.png" width="620" height="300"/>
+</p>
+
+From the image above, if we go from configuration ```1``` to configuration ```2``` and assuming <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" /> remains constant then 
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\frac{d(\dot{y})}{dt}=0&space;ms^{-2}" title="https://latex.codecogs.com/png.image?\dpi{110}\frac{d(\dot{y})}{dt}=0 ms^{-2}"/>
+</p>
+
+Why is that? Because in the **Inertial Frame**, <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" /> changes direction but in the **Body Frame** the direction of <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" /> remains constant. Hence, <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{x}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{x}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{y}" /> rotate together with the Body Frame and <img src="https://latex.codecogs.com/png.image?\dpi{110}\ddot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}\ddot{y}" /> appears in the Body Frame only when the magnitude changes.
+
+<img src="https://latex.codecogs.com/png.image?\dpi{110}a_{c}=\dot{x}\cdot&space;\dot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{c}=\dot{x}\cdot \dot{\psi }" /> appears because the Body Frame is rotating w.r.t the Inertial Frame. If the Body Frame did not rotate then the second term in <img src="https://latex.codecogs.com/png.image?\dpi{110}a_{y}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{y}" /> would be ```0``` because <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\psi " /> would be ```0```.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160682316-bb145af8-0714-4b28-a6fe-59ec2cb8f062.png"/>
+</p>
+
+Therefore:
+
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160683452-a563f2e0-506a-4888-adcd-11c5b2e6b7a5.png"/>
+</p>
+
+
+
+#### 2.7 Modelling the Front Wheel
 
 
 
