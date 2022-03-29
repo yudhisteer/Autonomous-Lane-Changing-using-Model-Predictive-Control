@@ -391,7 +391,15 @@ Therefore:
   <img src= "https://user-images.githubusercontent.com/59663734/160683452-a563f2e0-506a-4888-adcd-11c5b2e6b7a5.png"/>
 </p>
 
+We update our equations of motion as we have expanded our terms in <img src="https://latex.codecogs.com/png.image?\dpi{110}a_{y}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{y}" />:
 
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}&plus;F_{y_{r}}=m(\ddot{y}&plus;\dot{x}\cdot&space;\dot{\psi&space;})\xrightarrow[]{}1" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}+F_{y_{r}}=m(\ddot{y}+\dot{x}\cdot \dot{\psi })\xrightarrow[]{}1""/>
+</p>
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}\cdot&space;l_{f}-F_{y_{r}}\cdot&space;l_{r}=I\cdot&space;\ddot{\psi&space;}\xrightarrow[]{}2" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}\cdot l_{f}-F_{y_{r}}\cdot l_{r}=I\cdot \ddot{\psi }\xrightarrow[]{}2"/>
+</p>
 
 #### 2.7 Modelling the Front Wheel
 
