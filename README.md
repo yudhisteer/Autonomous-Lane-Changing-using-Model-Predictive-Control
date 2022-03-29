@@ -298,6 +298,16 @@ where
 
 
 #### 2.5 Understanding Centripetal Acceleration
+We will further derive our equations of motion but before that we need to explore what is centripetal acceleration. 
+
+_Centripetal acceleration is the the acceleration of a body traversing a circular path. Because velocity is a vector quantity (that is, it has both a magnitude and a direction), when a body travels on a circular path, its direction constantly changes and thus its velocity changes, producing an acceleration. The acceleration is directed radially toward the centre of the circle._
+
+The figure below shows an object moving in a circular path at constant speed. The direction of the instantaneous velocity is shown at two points along the path. Acceleration is in the direction of the change in velocity, which points directly toward the center of rotation—the center of the circular path. We call the acceleration of an object moving in uniform circular motion—resulting from a net external force—the centripetal acceleration <img src="https://latex.codecogs.com/png.image?\dpi{110}a_{c}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{c}" />; centripetal means “toward the center” or “center seeking”.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160571893-f4253c5e-c484-45a1-8255-d09f643cec10.png" width="300" height="300"/>
+</p>
+
 
 #### 2.6 Modelling the Front Wheel
 
@@ -317,3 +327,5 @@ where
 3. https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=1064&context=mems500#:~:text=Obstacle%20avoidance%2C%20especially%20lane%20change,a%20safe%20and%20stable%20driving.
 4. https://www.youtube.com/watch?v=oYMMdjbmQXc
 5. https://en.wikipedia.org/wiki/Ackermann_steering_geometry
+6. https://www.britannica.com/science/centripetal-acceleration
+7. https://www.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/a/what-is-centripetal-acceleration
