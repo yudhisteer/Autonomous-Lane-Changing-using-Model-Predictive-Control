@@ -262,6 +262,40 @@ In the diagram above we see that we have a front velocity <img src="https://late
 </p>
 
 #### 2.4 Equations of Motion in Lateral Direction
+We will now derive the equations of motion which connect all forces to an acceleration and connect all moments to an angular acceleration.
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\sum&space;F&space;=&space;&space;m\cdot&space;a" title="https://latex.codecogs.com/png.image?\dpi{110}\sum F = m\cdot a"/>
+</p>
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\sum&space;M&space;=&space;&space;I\cdot&space;\ddot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}\sum M = I\cdot \ddot{\psi }"/>
+</p>
+
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160564573-f600c77f-848c-41e2-9dc2-2ba285c3be81.png" width="500" height="280"/>
+</p>
+
+Hence, from the equations above we derive the equations of motion in the lateral direction:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}&plus;F_{y_{r}}=m\cdot&space;a_{y}\xrightarrow[]{}1" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}+F_{y_{r}}=m\cdot a_{y}\xrightarrow[]{}1"/>
+</p>
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}\cdot&space;l_{f}-F_{y_{r}}\cdot&space;l_{r}=I\cdot&space;\ddot{\psi&space;}\xrightarrow[]{}2" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}\cdot l_{f}-F_{y_{r}}\cdot l_{r}=I\cdot \ddot{\psi }\xrightarrow[]{}2"/>
+</p>
+
+where
+
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}" /> are fritional forces.
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}\ddot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}\ddot{\psi }" /> is the angular acceleration in <img src="https://latex.codecogs.com/png.image?\dpi{110}rad&space;\cdot&space;s^{-2}" title="https://latex.codecogs.com/png.image?\dpi{110}rad \cdot s^{-2}" />
+- ```I``` is the moment of inertia in <img src="https://latex.codecogs.com/png.image?\dpi{110}Kg&space;\cdot&space;m^{2}" title="https://latex.codecogs.com/png.image?\dpi{110}Kg \cdot m^{2}" />
+- ```m``` is the mass of the body in <img src="https://latex.codecogs.com/png.image?\dpi{110}Kg" title="https://latex.codecogs.com/png.image?\dpi{110}Kg" />
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}a_{y}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{y}" /> is the acceleration in the lateral direction
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}l_{r}" title="https://latex.codecogs.com/png.image?\dpi{110}l_{r}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}l_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}l_{f}" /> are the perpendicular distance in ```m``` from the frictional forces to the Centre of gravity of the body, <img src="https://latex.codecogs.com/png.image?\dpi{110}C_{g}" title="https://latex.codecogs.com/png.image?\dpi{110}C_{g}" />.
+
 
 #### 2.5 Understanding Centripetal Acceleration
 
