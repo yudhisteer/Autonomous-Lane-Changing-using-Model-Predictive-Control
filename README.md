@@ -308,6 +308,44 @@ The figure below shows an object moving in a circular path at constant speed. Th
   <img src= "https://user-images.githubusercontent.com/59663734/160571893-f4253c5e-c484-45a1-8255-d09f643cec10.png" width="300" height="300"/>
 </p>
 
+In the image above, we have a body moving along the arc length ```x``` from point ```A``` to ```B```. The equation relating ```x```, ```r``` and <img src="https://latex.codecogs.com/png.image?\dpi{110}\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}\psi " /> is:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}x=r\cdot&space;\psi&space;" title="https://latex.codecogs.com/png.image?\dpi{110}x=r\cdot \psi "/>
+</p>
+
+It is important to note here that the linear velocity ```V``` is always perpendicular to the curved path - it always acts tangential to the circular path. We define velocity as the rate of change of displacement, therefore:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}V&space;=&space;\frac{d(x)}{dt}=\dot{x}=\frac{d(r\cdot&space;\psi&space;)}{dt}=r\cdot&space;\dot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}V = \frac{d(x)}{dt}=\dot{x}=\frac{d(r\cdot \psi )}{dt}=r\cdot \dot{\psi }" />
+</p>
+
+where <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{\psi }" /> is the rate of change of angular displacement.
+
+If we now differentiate the equation above a second time, we will get the acceleration which is defined as the rate of change of velocity:
+
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}a_{c}=\frac{d^{2}(x)}{dt^{2}}=\frac{d(V)}{dt}=r\cdot&space;\ddot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}a_{c}=\frac{d^{2}(x)}{dt^{2}}=\frac{d(V)}{dt}=r\cdot \ddot{\psi }" />
+</p>
+
+We can also prove that the centripetal acceleration is equal to <img src="https://latex.codecogs.com/png.image?\dpi{110}\frac{V^{2}}{r}" title="https://latex.codecogs.com/png.image?\dpi{110}\frac{V^{2}}{r}" /> thanks to this derivation from Wikipedia:
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160661910-17f39bf9-5708-464d-8fef-f0e92e2799ea.png" width="550" height="300"/>
+</p>
+
+We can further derive the centripetal accelearion to get:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/svg.image?a_{c}=\frac{V^{2}}{r}=\frac{\dot{x}\cdot&space;\dot{x}}{r}=\frac{(r\cdot&space;\dot{\psi&space;})\cdot&space;\dot{x}}{r}=\dot{\psi}&space;\cdot&space;\dot{x}" title="https://latex.codecogs.com/svg.image?a_{c}=\frac{V^{2}}{r}=\frac{\dot{x}\cdot \dot{x}}{r}=\frac{(r\cdot \dot{\psi })\cdot \dot{x}}{r}=\dot{\psi} \cdot \dot{x}" />
+</p>
+
+where:
+
+- <img src="https://latex.codecogs.com/svg.image?\dot{x}" title="https://latex.codecogs.com/svg.image?\dot{x}" />: change of longitudinal velocity w.r.t time
+
+- <img src="https://latex.codecogs.com/svg.image?\dot{\psi&space;}" title="https://latex.codecogs.com/svg.image?\dot{\psi }" />: change of angular displacement w.r.t time
 
 #### 2.6 Modelling the Front Wheel
 
@@ -329,3 +367,4 @@ The figure below shows an object moving in a circular path at constant speed. Th
 5. https://en.wikipedia.org/wiki/Ackermann_steering_geometry
 6. https://www.britannica.com/science/centripetal-acceleration
 7. https://www.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/a/what-is-centripetal-acceleration
+8. https://simple.wikipedia.org/wiki/Centripetal_force
