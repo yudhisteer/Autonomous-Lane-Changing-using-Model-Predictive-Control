@@ -509,6 +509,34 @@ We can now update our equation of slip angle for front wheel as:
 </p>                                                                                                                                       
 
 ##### 2.7.2 Rear Wheel's Slip Angle
+The rear wheel does not rotate and as such this creates a slowing effect. The lateral velocity for the back wheel then becomes:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}V_{L}=\dot{y}-\dot{\psi&space;}\cdot&space;l_{r}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{L}=\dot{y}-\dot{\psi }\cdot l_{r}" />
+</p>      
+
+Updating our sliping angle equation for the rear wheel:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}tan(\theta&space;_{V_{r}})=\frac{V_{L}}{\dot{x}}=\frac{\dot{y}-\dot{\psi&space;}\cdot&space;l_{r}}{\dot{x}}" title="https://latex.codecogs.com/png.image?\dpi{110}tan(\theta _{V_{r}})=\frac{V_{L}}{\dot{x}}=\frac{\dot{y}-\dot{\psi }\cdot l_{r}}{\dot{x}}" />
+</p>      
+
+
+In order to calculate <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{f}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{f}}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{r}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{r}}" /> we could use arctan, but this will only make the equations more complex. Instead we will use the ```small angle approximation```.
+
+Since we are changing lanes, the steering angle would be very close so we can approximate:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}tan(\theta&space;)\approx&space;\theta&space;" title="https://latex.codecogs.com/png.image?\dpi{110}tan(\theta )\approx \theta " />
+</p>      
+
+ We therfore have our slipping angles as:
+ <p align="center">
+<img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{f}}=\frac{\dot{y}&plus;\dot{\psi&space;}\cdot&space;l_{f}}{\dot{x}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{f}}=\frac{\dot{y}+\dot{\psi }\cdot l_{f}}{\dot{x}}" />
+  
+<p align="center">
+<img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{r}}=\frac{\dot{y}-\dot{\psi&space;}\cdot&space;l_{r}}{\dot{x}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{r}}=\frac{\dot{y}-\dot{\psi }\cdot l_{r}}{\dot{x}}" />
+
 
 
 
