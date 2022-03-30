@@ -402,6 +402,51 @@ We update our equations of motion as we have expanded our terms in <img src="htt
 </p>
 
 #### 2.7 Modelling the Front Wheel
+Before we assumed that the velocity of each wheel was in the direction of tha twheel. However, this is only **true** when the vehicle is moving at ```low speed```.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160754534-9c549816-cf9d-422f-afdd-7666f2a8cd19.png" width="300" height="240"/>
+</p>
+
+When the vehicle is moving at high speed, it experiences ```tyre deformation```. How this happens? The tyre are made of rubber and the friction between the tyres and the road under lateral load causes deformation. So our contact patch is not going to be facing the exact same direction as the rest of the tyre which is not experiencing friction. 
+
+
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160758571-50c89208-2362-4443-b3fe-d11546c7923e.png" width="520" height="330"/>
+</p>
+                                                                                                                                            
+The velocity fo the wheel will be between the longitudinal axis and the axis of the wheel - the velocity will be faicng the same direction as the direction of the contact patch. From the diagram above, we can therefore deduce the following equations:
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;_{f}=\delta&space;-\theta&space;_{V_{f}}" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha _{f}=\delta -\theta _{V_{f}}"/>
+</p>
+
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;_{r}=0&space;-\theta&space;_{V_{r}}=-\theta&space;_{V_{r}}" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha _{r}=0 -\theta _{V_{r}}=-\theta _{V_{r}}"/>
+</p>
+
+The typical relation between the lateral force and the slip angle can be observed in the figure below. It is shown in expriments that slip angles are proportional to the lateral forces. Hence, the tire model describes a linear relationship between tire lateral force and slip angle.
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160759066-7188b293-ad59-4a33-a6fb-153d5def9970.png"/>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -422,3 +467,7 @@ We update our equations of motion as we have expanded our terms in <img src="htt
 6. https://www.britannica.com/science/centripetal-acceleration
 7. https://www.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/a/what-is-centripetal-acceleration
 8. https://simple.wikipedia.org/wiki/Centripetal_force
+9. https://www.youtube.com/watch?v=9bs2cEyK7Uo
+10. https://andresmendes.github.io/openvd/build/html/tire.html                                                                                                                   
+                                                                                                                                            
+                                                                                                                                            
