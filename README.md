@@ -501,6 +501,12 @@ In our case, we have both translation and rotation of the Centre of mass therefo
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160770721-7f72eaf0-fcf3-42eb-9d47-76506b4a8a19.png"  width="670" height="320"/>
 </p>
+                                                                                                                                             
+We can now update our equation of slip angle for front wheel as:
+                                                                                                                                             
+<p align="center">
+  <img src= https://latex.codecogs.com/png.image?\dpi{110}tan(\theta&space;_{V_{f}})=\frac{V_{L}}{\dot{x}}=\frac{\dot{y}&plus;\dot{\psi&space;}\cdot&space;l_{f}}{\dot{x}}" title="https://latex.codecogs.com/png.image?\dpi{110}tan(\theta _{V_{f}})=\frac{V_{L}}{\dot{x}}=\frac{\dot{y}+\dot{\psi }\cdot l_{f}}{\dot{x}}" />
+</p>                                                                                                                                       
 
 ##### 2.7.2 Rear Wheel's Slip Angle
 
