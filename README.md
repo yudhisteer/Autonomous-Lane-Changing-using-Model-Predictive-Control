@@ -466,6 +466,23 @@ We already know the equation for our slip angles <img src="https://latex.codecog
   <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}&space;=&space;2\cdot&space;C_{\alpha&space;_{r}}\cdot&space;(-\theta&space;_{V_{r}})" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}} = 2\cdot C_{\alpha _{r}}\cdot (-\theta _{V_{r}})"/>
 </p>
 
+Now, we need to figure out how can we write <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{f}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{f}}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{r}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{r}}" /> in terms of our known variables: <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{x},\dot{y},l_{f},l_{r},\dot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{x},\dot{y},l_{f},l_{r},\dot{\psi }" />
+
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160768246-1eccc16d-a366-4962-b534-f4b98c906ca5.png" width="280" height="350"/>
+</p>
+
+We can find <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{f}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{f}}" /> using tan. <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{L}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{L}" /> can be seen as the resultant velocity in the lateral direction.
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}tan(\theta&space;_{V_{f}})=\frac{V_{L}}{\dot{x}}" title="https://latex.codecogs.com/png.image?\dpi{110}tan(\theta _{V_{f}})=\frac{V_{L}}{\dot{x}}"/>
+</p>
+
+
+
+
+
+
 
 
 
