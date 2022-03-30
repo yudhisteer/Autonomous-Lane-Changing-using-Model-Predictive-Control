@@ -427,24 +427,44 @@ The velocity fo the wheel will be between the longitudinal axis and the axis of 
   <img src= "https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;_{r}=0&space;-\theta&space;_{V_{r}}=-\theta&space;_{V_{r}}" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha _{r}=0 -\theta _{V_{r}}=-\theta _{V_{r}}"/>
 </p>
 
-The typical relation between the lateral force and the slip angle can be observed in the figure below. It is shown in expriments that slip angles are proportional to the lateral forces. Hence, the tire model describes a linear relationship between tire lateral force and slip angle.
+The typical relation between the lateral force and the slip angle can be observed in the figure below. It is shown in expriments that slip angles are ```proportional``` to the lateral forces. 
 
 <p align="center">
-  <img src= "https://user-images.githubusercontent.com/59663734/160759066-7188b293-ad59-4a33-a6fb-153d5def9970.png"/>
+  <img src= "https://user-images.githubusercontent.com/59663734/160759066-7188b293-ad59-4a33-a6fb-153d5def9970.png" width="430" height="250"/>
+</p>
+
+                                                                                                                   
+The tire model describes a ```linear relationship``` between tire lateral force and slip angle. Note this is valid only for small slip angles as shown on the graph above - for slip angles < 8 deg. 
+                                                                                                                   
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}&space;\propto\alpha&space;&space;_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}} \propto\alpha _{f}"/>
+</p>
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}&space;\propto\alpha&space;&space;_{r}" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}} \propto\alpha _{r}"/>
+</p>
+
+We can then express our lateral forces in terms of cornering stiffness constants ```C```: 
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}&space;=&space;2\cdot&space;C_{\alpha&space;_{f}}\cdot&space;\alpha&space;_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}} = 2\cdot C_{\alpha _{f}}\cdot \alpha _{f}"/>
+</p>
+
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}&space;=&space;2\cdot&space;C_{\alpha&space;_{r}}\cdot&space;\alpha&space;_{r}" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}} = 2\cdot C_{\alpha _{r}}\cdot \alpha _{r}"/>
 </p>
 
 
+We already know the equation for our slip angles <img src="https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha _{f}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\alpha&space;_{r}" title="https://latex.codecogs.com/png.image?\dpi{110}\alpha _{r}" />:
 
 
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}}&space;=&space;2\cdot&space;C_{\alpha&space;_{f}}\cdot&space;(\delta&space;-\theta&space;_{V_{f}})" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{f}} = 2\cdot C_{\alpha _{f}}\cdot (\delta -\theta _{V_{f}})"/>
+</p>
 
-
-
-
-
-
-
-
-
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}}&space;=&space;2\cdot&space;C_{\alpha&space;_{r}}\cdot&space;(-\theta&space;_{V_{r}})" title="https://latex.codecogs.com/png.image?\dpi{110}F_{y_{r}} = 2\cdot C_{\alpha _{r}}\cdot (-\theta _{V_{r}})"/>
+</p>
 
 
 
