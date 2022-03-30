@@ -468,6 +468,8 @@ We already know the equation for our slip angles <img src="https://latex.codecog
 
 Now, we need to figure out how can we write <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{f}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{f}}" /> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space;_{V_{r}}" title="https://latex.codecogs.com/png.image?\dpi{110}\theta _{V_{r}}" /> in terms of our known variables: <img src="https://latex.codecogs.com/png.image?\dpi{110}\dot{x},\dot{y},l_{f},l_{r},\dot{\psi&space;}" title="https://latex.codecogs.com/png.image?\dpi{110}\dot{x},\dot{y},l_{f},l_{r},\dot{\psi }" />
 
+##### 2.7.1 Front Wheel's Slip Angle
+
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160768246-1eccc16d-a366-4962-b534-f4b98c906ca5.png" width="280" height="350"/>
 </p>
@@ -478,12 +480,29 @@ We can find <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta&space
   <img src= "https://latex.codecogs.com/png.image?\dpi{110}tan(\theta&space;_{V_{f}})=\frac{V_{L}}{\dot{x}}" title="https://latex.codecogs.com/png.image?\dpi{110}tan(\theta _{V_{f}})=\frac{V_{L}}{\dot{x}}"/>
 </p>
 
+Similar to finding the acceleration in the lateral direction, we have two scenarios. First, we can have lateral motion of the centre of mass as shown below in the configuration ```1``` and ```2```. Our lateral velocity is then
 
+<p align="center">
+  <img src= "https://latex.codecogs.com/png.image?\dpi{110}V_{L}&space;=&space;\dot{y}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{L} = \dot{y}"/>
+</p>
 
+Or, we can have rotation about the centre of mass describing a circular path of radius <img src="https://latex.codecogs.com/png.image?\dpi{110}l_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}l_{f}" /> which is the length from the centre of mass till the front of the wheel. In this configuration ```3```, we have 
 
+<p align="center">
+  <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{L}=\dot{\psi&space;}\cdot&space;l_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{L}=\dot{\psi }\cdot l_{f}"  />
+</p>
 
+In our case, we have both translation and rotation of the Centre of mass therefore the lateral velocity is:
 
+<p align="center">
+  <img src="https://latex.codecogs.com/png.image?\dpi{110}V_{L}=\dot{y}&plus;\dot{\psi&space;}\cdot&space;l_{f}" title="https://latex.codecogs.com/png.image?\dpi{110}V_{L}=\dot{y}+\dot{\psi }\cdot l_{f}"  />
+</p>
 
+<p align="center">
+  <img src= "https://user-images.githubusercontent.com/59663734/160770721-7f72eaf0-fcf3-42eb-9d47-76506b4a8a19.png"  width="670" height="320"/>
+</p>
+
+##### 2.7.2 Rear Wheel's Slip Angle
 
 
 
