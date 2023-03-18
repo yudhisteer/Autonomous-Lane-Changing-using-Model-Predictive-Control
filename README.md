@@ -89,7 +89,7 @@ Our goal will be to overtake the obstacle, that is changing the lane, in ```7```
 
 **Scenario 1: Staight Line Trajectory**
 
-We can have a case where we can straight line trajectory for lane overtaking. Also, it can be an easy task computationally, it will not be a realistic case. In real-life, it is impossibe to have such sharp turns and suppose if we can acheive it then it will be quite uncomfortable for our passengers. Hence, we can scrape scenatio 1.
+We can have a case where we can straight line trajectory for lane overtaking. Also, it can be an easy task computationally, it will not be a realistic case. In real-life, it is impossibe to have such sharp turns and suppose if we can achieve it then it will be quite uncomfortable for our passengers. Hence, we can scrape scenatio 1.
 
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160291980-5227a42d-d025-40ed-bfac-41cedb4b20e6.png" />
@@ -98,7 +98,7 @@ We can have a case where we can straight line trajectory for lane overtaking. Al
 
 **Scenario 2: Bézier Curve Trajectory**
 
-The reason we use a spline or more specifically a Bézier curve is in order to acheive a more realistic scenario which we would expect in real-life. We can be sure to acheive a smooth transition during overtaking which will allow for the comfort and safety of the passengers.
+The reason we use a spline or more specifically a Bézier curve is in order to achieve a more realistic scenario which we would expect in real-life. We can be sure to achieve a smooth transition during overtaking which will allow for the comfort and safety of the passengers.
 
 <p align="center">
   <img src= "https://user-images.githubusercontent.com/59663734/160292453-f61bbdd6-b157-4441-99c6-0958440e1f10.png" />
